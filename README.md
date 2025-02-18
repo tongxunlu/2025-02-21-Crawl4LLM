@@ -2,6 +2,9 @@
 
 This repo contains the code for the paper "Crawl4LLM: Efficient Web Crawling for LLM Pretraining".
 
+> [!IMPORTANT] 
+> To run the crawler efficiently, the ClueWeb22 data should be placed on **an SSD**.
+
 ## Prerequisite
 
 1. [Request the ClueWeb22 dataset](https://lemurproject.org/clueweb22/).

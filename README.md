@@ -2,9 +2,6 @@
 
 This repo contains the code for the paper "Crawl4LLM: Efficient Web Crawling for LLM Pretraining".
 
-> [!IMPORTANT] 
-> To run the crawler efficiently, the ClueWeb22 data should be placed on **an SSD**.
-
 ## Prerequisite
 
 1. [Request the ClueWeb22 dataset](https://lemurproject.org/clueweb22/).
@@ -17,6 +14,9 @@ pyyaml
 wandb
 ```
 3. [Download the DCLM fastText classifier](https://huggingface.co/mlfoundations/fasttext-oh-eli5/tree/main) to `fasttext_scorers/`.
+
+> [!IMPORTANT] 
+> To run the crawler efficiently, the ClueWeb22 data should be placed on **an SSD**.
 
 ## Run the Crawler
 

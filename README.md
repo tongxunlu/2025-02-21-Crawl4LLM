@@ -96,3 +96,12 @@ rating_methods:
         type: inlink_count
 ```
 
+## Pretraining and Evaluation
+
+After running the crawler, the crawled document ids will be placed in `output_dir` in the configuration file. Run the following command to get the document texts:
+
+```bash
+python fetch_docs.py  --input_dir <document_ids_dir>  --output_dir <document_texts_dir>  --num_workers <num_workers>
+```
+
+Then you can use the [DCLM](https://github.com/mlfoundations/dclm/) framework to run LLM pretraining and evaluation.

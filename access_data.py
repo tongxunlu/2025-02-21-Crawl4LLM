@@ -1,4 +1,5 @@
 import logging
+import sys
 from corpus_interface import ClueWeb22Api, UnifiedGetter
 
 logger = logging.getLogger(__name__)
@@ -10,12 +11,10 @@ def main():
         datefmt="%m/%d/%Y %H:%M:%S",
         level=logging.INFO,
     )
-    cw22 = UnifiedGetter(
-        ClueWeb22Api("/bos/tmp6/ClueWeb22_A"), docid_pos=5
-    )  # path to ClueWeb22_A on Boston
-    doc_content = cw22.get_doc("clueweb22-en0045-44-19547")
+    cw22 = UnifiedGetter(ClueWeb22Api(sys.argv[1]), docid_pos=5)
+    doc_content = cw22.get_doc(sys.argv[2])
     print(doc_content)
-    outlinks = cw22.get_outlinks("clueweb22-en0045-44-19547")
+    outlinks = cw22.get_outlinks(sys.argv[2])
     print(outlinks)
     for outlink in outlinks:
         if doc := cw22.get_doc(outlink):

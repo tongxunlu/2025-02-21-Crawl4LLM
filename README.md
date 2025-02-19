@@ -105,3 +105,13 @@ python fetch_docs.py  --input_dir <document_ids_dir>  --output_dir <document_tex
 ```
 
 Then you can use the [DCLM](https://github.com/mlfoundations/dclm/) framework to run LLM pretraining and evaluation.
+
+## Miscellaneous
+
+### Browse the Data
+
+Run the following command to print a document and its outlinks by its id:
+
+```bash
+python access_data.py <path_to_clueweb22> <document_id>
+```

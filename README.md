@@ -1,6 +1,6 @@
 # Crawl4LLM
 
-This repo contains the code for the paper "Crawl4LLM: Efficient Web Crawling for LLM Pretraining".
+This repo contains the code for the paper "[Crawl4LLM: Efficient Web Crawling for LLM Pretraining](https://arxiv.org/pdf/2502.13347)".
 
 ## Prerequisite
 
